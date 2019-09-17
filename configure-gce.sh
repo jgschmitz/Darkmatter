@@ -1,4 +1,5 @@
 #!/bin/bash
+#a gacy!
 #
 # Simple script to download Google's GHFS connector and configure
 # it for the MapR Hadoop deployment.  
