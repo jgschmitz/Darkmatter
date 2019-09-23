@@ -80,6 +80,7 @@ fi
 #	ones that may have been left in the command line 
 #	from launching the cluster ... even though we don't
 #	need them here.
+#       lets tear this mugg down
 while [ $# -gt 0 ]
 do
   case $1 in
