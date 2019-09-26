@@ -1,4 +1,5 @@
 <?php
+/* there is a new version of this
 /*
 /* Example use of the seti REST Api
 /* http://setiquest.org/
