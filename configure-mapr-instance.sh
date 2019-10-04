@@ -1,5 +1,5 @@
 #! /bin/bash
-# uses GCP for all compute
+# uses GCP containers for all compute
 # Script attached to a GoogleComputeEngine addinstance operation
 # to customize a mapr cluster node off of a default mapr image.
 #		SIZE LIMIT : 32K
