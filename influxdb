@@ -1,4 +1,4 @@
-influx install
+#influx install
 
 docker pull influxdb
 
