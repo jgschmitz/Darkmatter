@@ -16,7 +16,7 @@
 #	- Basic distro differences (APT-GET vs YUM, etc) can be handled
 #	    There are so few differences, it seemed better to manage one script.
 #
-# Tested with MapR 2.x, 3.x, and 4.x
+#Tested with MapR 4
 #
 # JAVA
 #	This script defaults to OpenJDK; the logic to support Oracle JDK 
