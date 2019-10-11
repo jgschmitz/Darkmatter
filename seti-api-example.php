@@ -1,5 +1,5 @@
 <?php
-/* there is a new version of this
+/* there is a new version of this running MapR
 /*
 /* Example use of the seti REST Api
 /* http://setiquest.org/
