@@ -1,4 +1,5 @@
 #!/bin/bash
+#set it off 
 #this grabs the GHFS connector
 #
 # Simple script to download Google's GHFS connector and configure
