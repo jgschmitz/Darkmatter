@@ -2,7 +2,7 @@
 
 docker pull influxdb
 
-Supported tags and respective Dockerfile links
+Supported tags -  respective Dockerfile links
 1.5, 1.5.4 (influxdb/1.5/Dockerfile)
 1.5-alpine, 1.5.4-alpine (influxdb/1.5/alpine/Dockerfile)
 1.5-data, 1.5.4-data (influxdb/1.5/data/Dockerfile)
