@@ -1,4 +1,5 @@
 #influx install
+#real time database
 
 docker pull influxdb
 
