@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 #  Script to launch a MapR cluster in the Google Cloud Environment.
-#   Cluster configuration defined in simple file of the form
+#   Cluster configuration defined in simple file
 #       ${NODE_NAME_ROOT}<index>:<packages>
 #   for all the nodes you desire.  The 'mapr-' prefix is not necessary
 #   for the packages. Any line that does NOT start with ${NODE_NAME_ROOT}
