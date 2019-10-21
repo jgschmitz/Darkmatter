@@ -27,7 +27,7 @@ usage() {
   echo "
   Usage:
     $PROGRAM
-       --config-file <cfg-file>         # Need to the same as lanch-mapr-cluster.sh used
+      
        --persistent-disks <nxm>         # N disks of M gigabytes, need to the same as lanch-mapr-cluster.sh used
        --zone <zone>                    # GCE zone
       [ --project <GCE Project ID>     # uses gcloud config default ]
