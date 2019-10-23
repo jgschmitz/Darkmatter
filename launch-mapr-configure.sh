@@ -7,7 +7,7 @@
 #   for the packages. Any line that does NOT start with ${NODE_NAME_ROOT}
 #   is treated as a comment. 
 #
-#   A sample config file is
+#   A sample config file
 #       node0:zookeeper,cldb,fileserver,tasktracker,nfs,webserver
 #       node1:zookeeper,cldb,fileserver,tasktracker,nfs
 #       node2:zookeeper,jobtracker,fileserver,tasktracker,nfs
