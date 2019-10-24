@@ -18,7 +18,7 @@ if(mysql_num_rows(mysql_query("select `public_key`, `private_key` from user_base
 //Check if session key is blank and a key is not being requested
 if(empty($_GET['session_key']) && $_GET['data'] != 'new_session_key') {
 	
-	header("HTTP/1.1 403 Forbidden");
+	header("HTTP/1.1 403 No Access");
 	echo ' ';
 	exit;
 	
