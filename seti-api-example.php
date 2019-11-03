@@ -1,6 +1,6 @@
 <?php
 /* there is a new version of this running MapR +++
-/* converting this to mongodb
+/* converting this to mongoDB
 /*
 /* Example use of the seti REST Api
 /* http://setiquest.org/
