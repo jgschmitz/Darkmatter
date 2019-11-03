@@ -1,2 +1,2 @@
-gcutil ssh --project darkmatter --zone us-central1-a MapRonGCE-node6
+gcutil ssh --project darkmatter --zone us-central1-a MapRonGCE-node5
 
