@@ -1,7 +1,7 @@
 <?php
 /*
 /*
-/* SETI RESTful Server
+/* SETI REST API
 /* Api requests are targeted to this file
 */
 include_once('config/config.php');
