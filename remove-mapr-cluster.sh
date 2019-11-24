@@ -16,8 +16,8 @@
 #
 # Assumptions:
 #   gcloud tool is in the PATH
-#
-#
+
+
 
 PROGRAM=$0
 
