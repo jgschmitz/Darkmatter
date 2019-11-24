@@ -15,7 +15,7 @@
 #	be requested on the command line and automatically allocated.
 #
 # Assumptions:
-#   gcloud tool is in the PATH
+gcloud tool is in the PATH
 
 
 
