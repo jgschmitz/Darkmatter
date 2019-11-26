@@ -2,7 +2,7 @@
 /*
 /*
 /* SETI REST API
-/* Api requests are targeted to this file
+/* Api requests are targeted here
 */
 include_once('config/config.php');
 //Connect to database
