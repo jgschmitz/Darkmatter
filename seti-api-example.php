@@ -41,7 +41,7 @@ if(!empty($_GET['skip'])) {
 	z-index:1;
 	left: 0px;
 	top: 0px;
-	padding:1%;
+	padding:5%;
 	background-color: #F4F4F4;
 	border-bottom:solid 1px #CCC;
 	font-family:Tahoma, Geneva, sans-serif;
