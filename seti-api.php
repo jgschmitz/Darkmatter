@@ -2,7 +2,6 @@
 /*
 /* SETI REST API
 /* Api requests are targeted here
-*/
 include_once('config/config.php');
 //Connect to database
 mysql_select_db($config['databasename'], mysql_connect($config['dbhost'], $config['dbuser'], $config['dbpassword']));
