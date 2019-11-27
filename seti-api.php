@@ -1,6 +1,5 @@
 <?php
 /*
-/*
 /* SETI REST API
 /* Api requests are targeted here
 */
