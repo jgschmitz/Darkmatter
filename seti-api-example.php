@@ -7,7 +7,7 @@
 */
 //Configuration
 include_once("config/config.php");
-//Get the seti library
+
 include('seti_api.php');
 //Set api credentials, api credentials are unique to each user
 $seti = new SETI('aa720d2345c7a8476bd214f13d28025d', '92170641d84aae9b7353a20fb2832118');
