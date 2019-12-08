@@ -3,7 +3,7 @@
 /* SETI REST API
 /* Api requests are targeted here
 include_once('config/config.php');
-//Connect to database
+//Connect to MapR DB
 mysql_select_db($config['databasename'], mysql_connect($config['dbhost'], $config['dbuser'], $config['dbpassword']));
 //Validate credentials
 if(mysql_num_rows(mysql_query("select `public_key`, `private_key` from user_base where public_key='" . mysql_real_escape_string($_GET['public_key']) . "' and private_key='" . mysql_real_escape_string($_GET['private_key']) . "' limit 0, 1")) == 0) {
