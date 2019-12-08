@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+#  This destroys the cluster
 #  Script to remove an lanched MapR cluster in the Google Cloud Environment.
 #   --config-file --persistent-disks --node-name should be consistent with 
 #  the ones that launch script used.
