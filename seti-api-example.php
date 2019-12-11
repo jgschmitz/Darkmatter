@@ -5,7 +5,7 @@
 /* Example use of the seti API
 /* http://setiquest.org/
 */
-//Configuration
+//Config
 include_once("config/config.php");
 
 include('seti_api.php');
