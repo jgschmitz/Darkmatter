@@ -1,2 +1,1 @@
-gcutil ssh --project darkmatter --zone us-central1-a MapRonGCE-node1
-
+URI_STRING = "mongodb+srv://xxx:xxx@cluster0-2krlv.mongodb.net/test"
