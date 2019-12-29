@@ -1,1 +1,1 @@
-URI_STRING = "mongodb+srv://xxx:xxx@cluster0-2krlv.mongodb.net/test"
+URI_STRING = "mongodb+srv://user:pass@cluster0-2krlv.mongodb.net/test"
