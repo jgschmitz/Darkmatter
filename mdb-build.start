@@ -33,6 +33,7 @@ There are two Is this ok [y/N]: prompts. The first one permits the installation 
 
 Next, start the MongoDB service with the systemctl utility:
 
+#lets start up the database
 sudo systemctl start mongod
 Although we will not use them in this tutorial, you can also change the state of the MongoDB service with the reload and stop commands.
 
