@@ -7,4 +7,4 @@ Start your container binding the external port 3000.
 #you can start it like so from CLI
 docker run -d --name=grafana -p 3000:3000 grafana/grafana
 Try it out, default admin user is admin/admin.
-you can build dashboards from there - 
+you can build dashboards from there
