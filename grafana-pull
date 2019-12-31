@@ -1,7 +1,7 @@
 docker pull grafana/grafana
 
 Grafana Docker image
-Running your Grafana container
+
 Start your container binding the external port 3000.
 
 #you can start it like so from CLI
