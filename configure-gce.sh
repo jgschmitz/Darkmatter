@@ -3,7 +3,7 @@
 #this grabs the GHFS connector
 
 # Simple script to download Google's GHFS connector and configure
-print "there is no"
+print "there is"
 # The CONFIGBUCKET specification need not reference an existing 
 # bucket; it is simply the default location for un-affiliated files
 # accessed via the "gs://" syntax.
