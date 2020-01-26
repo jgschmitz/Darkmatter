@@ -1,4 +1,4 @@
-docker pull grafana/grafana
+>docker pull grafana/grafana
 
 Grafana Docker image
 
