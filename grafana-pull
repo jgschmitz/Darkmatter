@@ -1,5 +1,5 @@
 docker pull grafana/grafana
-"print 
+"prin
 Grafana Docker image
 
 Start your container binding the external port 3000.
