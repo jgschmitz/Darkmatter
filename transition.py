@@ -1,4 +1,4 @@
-#!/usr/
+#!/
 
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
