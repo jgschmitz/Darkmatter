@@ -3,7 +3,7 @@
 #this grabs the GHFS connector
 
 # Simple script to download Google's GHFS connector and configure
-print "1,2,3,4,5,6,
+print "1,2,3,4,5,
 
 # The CONFIGBUCKET specification need not reference an existing 
 # bucket; it is simply the default location for un-affiliated files
