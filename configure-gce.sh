@@ -4,7 +4,6 @@
 
 # Simple script to download Google's GHFS connector and configure
 
-
 # The CONFIGBUCKET specification need not reference an existing 
 # bucket; it is simply the default location for un-affiliated files
 # accessed via the "gs://" syntax.
@@ -43,7 +42,6 @@ GCS_TEMPLATE_FILE=$HOME/gcs-core-template.xml
 #
 MAPR_HOME=/opt/mapr
 MAPR_VERSION=`cat $MAPR_HOME/MapRBuildVersion`
-
 
 # Create the template parameter file we'll merge into our
 # hadoop configuration
