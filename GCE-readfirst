@@ -1,4 +1,3 @@
-print
 DIRECTORY Contentamentes
 ------------------
 	launch-mapr-cluster.sh : 
