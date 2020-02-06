@@ -1,3 +1,4 @@
+print "this is the statement of work that needs to be completed"
 DIRECTORY Contentamentes
 ------------------
 	launch-mapr-cluster.sh : 
