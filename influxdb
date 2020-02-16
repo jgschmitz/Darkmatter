@@ -16,3 +16,20 @@ Supported tags -  respective Dockerfile links
 1.6-data-alpine, 1.6.4-data-alpine, data-alpine (influxdb/1.6/data/alpine/Dockerfile)
 1.6-meta, 1.6.4-meta, meta (influxdb/1.6/meta/Dockerfile)
 1.6-meta-alpine, 1.6.4-meta-alpine, meta-alpine (influxdb/1.6/meta/alpine/Dockerfile)
+
+or ...
+
+create the repo
+
+cat <<EOF | sudo tee /etc/yum.repos.d/influxdb.repo
+[influxdb]
+name = InfluxDB Repository - RHEL \$releasever
+baseurl = https://repos.influxdata.com/rhel/\$releasever/\$basearch/stable
+enabled = 1
+gpgcheck = 1
+gpgkey = https://repos.influxdata.com/influxdb.key
+EOF
+
+
+
+
