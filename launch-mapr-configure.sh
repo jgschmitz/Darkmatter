@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#  Script to launch a MapR cluster in the Google Cloud
+#  Script to launch a MapR cluster in the Google
 #   Cluster configuration defined in simple file
 #       ${NODE_NAME_ROOT}<index>:<packages>
 #   for all the nodes you desire.  The 'mapr-' prefix is not necessary
