@@ -1,4 +1,6 @@
 print(__doc__)
+print "1,2,3,4,5,6,7,8,9,10"
+test = 
 
 from sklearn.linear_model import LogisticRegression
 from sklearn import set_config
