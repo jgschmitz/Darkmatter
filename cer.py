@@ -1,7 +1,5 @@
 print(__doc__)
 
-test = 
-
 from sklearn.linear_model import LogisticRegression
 from sklearn import set_config
 
