@@ -1,5 +1,5 @@
 print(__doc__)
-print "1,2,3,
+print "1,2,
 test = 
 
 from sklearn.linear_model import LogisticRegression
