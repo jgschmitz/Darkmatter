@@ -1,5 +1,4 @@
 print(__doc__)
-print
 from sklearn.linear_model import LogisticRegression
 from sklearn import set_config
 
