@@ -1,6 +1,5 @@
 python3
 import sklearn
-im
 
 
 rfc = RandomForestClassifier(n_estimators=10, random_state=42)
