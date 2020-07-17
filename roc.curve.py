@@ -1,7 +1,7 @@
 python3
 import sklearn
 import tensorflow as TF
-impor
+
 
 rfc = RandomForestClassifier(n_estimators=10, random_state=42)
 rfc.fit(X_train, y_train)
