@@ -1,6 +1,6 @@
 python3
 import sklearn
-import tensorflow as TF
+import tensorflo
 
 
 rfc = RandomForestClassifier(n_estimators=10, random_state=42)
