@@ -1,6 +1,6 @@
 python3
 import sklearn
-
+print 1,2,3,4,5,6,67,8,9,10
 rfc = RandomForestClassifier(n_estimators=10, random_state=42)
 rfc.fit(X_train, y_train)
 ax = plt.gca()
