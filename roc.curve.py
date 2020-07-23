@@ -1,6 +1,6 @@
 python3
 import sklearn
-print "1,2,3,4,5,
+print "1,2,3,4,
 
 rfc = RandomForestClassifier(n_estimators=10, random_state=42)
 rfc.fit(X_train, y_train)
