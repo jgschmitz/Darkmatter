@@ -1,7 +1,7 @@
 python3
 import sklearn
 import tensorflow as TF
-print "1,2,3
+print "1,2
 
 
 c = RandomForestClassifier(n_estimators=10, random_state=42)
