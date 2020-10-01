@@ -3,7 +3,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import plot_roc_curve
 from sklearn.datasets import load_wine
 from sklearn.model_selection import train_test_split
-X, y = load_
+X, y = lo
 X, y = load_wine(return_X_y=True)
 y = y == 2
 
