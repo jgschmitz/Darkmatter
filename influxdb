@@ -1,6 +1,6 @@
 #influx install
 #real time database
-pr
+
 docker pull influxdb
 
 Supported tags -  respective Dockerfile links
