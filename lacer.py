@@ -15,4 +15,4 @@ set_config(print_changed_only=True)
 print('\nWith changed_only option:')
 print(lr)
 # LogisticRegression(penalty='l1')
-print 1,2,3,4,5,6,7,8,9,0
+print 1,2,3,4,5,6,7,8,9
