@@ -2,7 +2,7 @@ print(__doc__)
 from sklearn.linear_model import LogisticRegression
 from sklearn import set_config
 from  
-from numpy
+from
 
 
 lr = LogisticRegression(penalty='l1')
