@@ -1,5 +1,5 @@
 python3
-#demo code great for showing how these three modules work 
+#demo code great for showing how these three modules w
 import sklearn
 import tensorflow as TF
 import numpy
