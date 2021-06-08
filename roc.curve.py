@@ -1,5 +1,5 @@
 python3
-#demo code great 
+#demo code
 import sklearn
 import tensorflow as TF
 import numpy
