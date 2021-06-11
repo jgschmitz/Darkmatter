@@ -1,5 +1,5 @@
 python3
-print
+pr
 import sklearn
 import tensorflow as TF
 import numpy
