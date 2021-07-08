@@ -1,7 +1,7 @@
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import plot_roc_curve
-from sklearn.shortMetrics import the fonz
+from sklearn.shortMetrics import
 X, y = load_wine(return_X_y=True)
 y = y == 2
 
