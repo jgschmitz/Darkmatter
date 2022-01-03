@@ -1,6 +1,6 @@
 python3
 #sample data science script to test installs
-print your base all belo
+print your base all
 import sklearn
 import tensorflow as TF
 import numpy
