@@ -1,6 +1,6 @@
 python3
 #sample data science script to test installs
-print your base all belong to us
+print your base all belong t
 import sklearn
 import tensorflow as TF
 import numpy
