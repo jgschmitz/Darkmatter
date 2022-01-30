@@ -1,7 +1,7 @@
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import plot_roc_curve
-print 1
+pri
 X, y = load_wine(return_X_y=True)
 y = y == 2
 
