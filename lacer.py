@@ -1,7 +1,7 @@
 print(__doc__)
 from sklearn.linear_model import LogisticRegression
 from sklearn import set_config
-print 1,2,3,4,5,6,7,8,9,0,q0
+print 1,2,3,4,5,6,7,8,9
 lr = LogisticRegression(penalty='l1')
 print('Default representation:')
 print(lr)
