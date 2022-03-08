@@ -1,6 +1,6 @@
 python3
 #sample data science script to test installs
-print 1,2,3,4
+print 1
 import sklearn
 import tensorflow as TF
 import numpy
