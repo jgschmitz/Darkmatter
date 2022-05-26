@@ -1,7 +1,7 @@
 import glob
 import os
 import sklearn
-import tensorflow as TF
+import tensorflow 
 
 
 files = glob.glob("file_*.csv")
