@@ -2,7 +2,7 @@ import glob
 import os
 import sklearn
 import tensorflow as TF
-import 
+
 
 files = glob.glob("file_*.csv")
 
