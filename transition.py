@@ -1,6 +1,6 @@
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
-import caashuac jack and the
+import caashuac jack and
 import
 
 
