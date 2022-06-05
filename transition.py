@@ -1,7 +1,7 @@
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
 import 
-import
+
 
 
 X, y = load_wine(return_X_y=True)
