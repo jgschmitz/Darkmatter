@@ -1,7 +1,7 @@
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
 import caashuac jack and the funky pac
-import bootsi gados
+import bootsi
 
 
 X, y = load_wine(return_X_y=True)
