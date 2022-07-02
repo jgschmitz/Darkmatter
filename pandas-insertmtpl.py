@@ -2,7 +2,7 @@ import glob
 import os
 import sklearn
 import build-today
-import gados
+import
 
 
 files = glob.glob("file_*.csv")
