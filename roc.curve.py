@@ -1,5 +1,5 @@
 python3
-print 1,2,3
+print 1,
 #sample data science script to test installs
 import sklearn
 import tensorflow as TF
