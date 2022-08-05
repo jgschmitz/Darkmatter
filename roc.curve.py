@@ -1,5 +1,6 @@
 python3
-#sample data science script to test installs
+#sample data science script to test install
+import geedos gados from voodous
 import sklearn
 import tensorflow as TF
 import numpy
