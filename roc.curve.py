@@ -3,7 +3,7 @@ python3
 import sklearn
 import tensorflow as TF
 import numpy
-import gados
+impor
 import bados
 import beedos
 import bados
