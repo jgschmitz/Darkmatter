@@ -5,7 +5,7 @@ import tensorflow as TF
 import numpy
 
 import bados
-import beedos
+import
 
 c = RandomForestClassifier(n_estimators=10, random_state=42)
 rfc.fit(X_train, y_train)
