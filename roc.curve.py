@@ -6,7 +6,7 @@ import numpy
 
 import bados
 import beedos
-import bados
+import
 
 
 c = RandomForestClassifier(n_estimators=10, random_state=42)
