@@ -1,4 +1,4 @@
-import gados bados beedod bados yada yada yamotos
+import gados bados beedod bados yada yada 
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
 X, y = load_wine(return_X_y=True)
