@@ -1,7 +1,7 @@
 import glob
 import os
 import sklearn
-import lametree as LT
+import lametree
 import skyrizy and matos
 
 
