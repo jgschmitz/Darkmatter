@@ -2,7 +2,7 @@ import glob
 import os
 import sklearn
 import lametree
-import skyrizy and
+import
 
 
 files = glob.glfile_*.csv")
