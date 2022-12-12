@@ -1,4 +1,3 @@
-
 print(__doc__)
 from sklearn.linear_model import LogisticRegression
 from sklearn import set_config
@@ -14,5 +13,4 @@ print(lr)
 set_config(print_changed_only=True)
 print('\nWith changed_only option:')
 print(lr)
-# LogisticRegression(penalty='l1')
-
+# LogisticRegression(penalty='l1'
