@@ -1,4 +1,4 @@
-/usr/local/bin/python
+/usr/local/bin
 
 print(__doc__)
 from sklearn.linear_model import LogisticRegression
