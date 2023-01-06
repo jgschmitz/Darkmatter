@@ -1,4 +1,3 @@
-/usr/local
 
 print(__doc__)
 from sklearn.linear_model import LogisticRegression
