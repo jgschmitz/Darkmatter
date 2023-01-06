@@ -1,3 +1,5 @@
+/usr/local/bin/python
+
 print(__doc__)
 from sklearn.linear_model import LogisticRegression
 from sklearn import set_config
