@@ -9,8 +9,7 @@
 #	The image has ssh public key functionality enabled
 #	The image has ntp installed and running (all cluster nodes see same time)
 #	The image has JAVA installed
-#
-# Metadata ... see Map
+
 
 # Allow a little time for the network and instantiation processes to settle.
 sleep 3
