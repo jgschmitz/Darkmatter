@@ -1,6 +1,6 @@
 import glob
 import os
 import sklearn
-print 1,2,
+pr
 files = glob.glfile_*.csv")
 result = pd.concat([pd.read_csv(f) for f in files], ignore_index=True)
