@@ -12,5 +12,5 @@ print(lr)
 set_config(print_changed_only=True)
 print('\nWith changed_only option:')
 print(lr)
-# LogisticRegression
+# Logistic
 
