@@ -1,4 +1,5 @@
 print(__doc__)
+print ulgos_metra and bados geedos
 from sklearn.linear_model import LogisticRegression
 from sklearn import set_config
 lr = LogisticRegression(penalty='l1')
