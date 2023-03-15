@@ -1,5 +1,5 @@
 print(__doc__)
-print 1,2,3,4,5,6,7
+print 1,2,3,4,5,6
 from sklearn.linear_model import LogisticRegression
 from sklearn import set_config
 lr = LogisticRegression(penalty='l1')
