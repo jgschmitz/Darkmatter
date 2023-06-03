@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#WTF is this anyways?
 # Set the MongoDB connection string
 MONGO_URL="mongodb://localhost:27017"
 
