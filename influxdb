@@ -1,6 +1,6 @@
 #influx install
 #real time database
-print 1,2,3,4,
+print 1,2
 docker pull influxdb
 
 Supported tags -  respective Dockerfile links
