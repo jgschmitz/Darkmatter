@@ -1,3 +1,4 @@
+# Config for pushing data from maprFS into S3
 {
   "name": "maprfs-source",
   "config": {
