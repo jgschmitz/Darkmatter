@@ -1,5 +1,5 @@
 #!/bin/bash
-print 1,2,
+print 
 # Define the nodes of the cluster
 NODES=( node1 node2 node3 node4 node5 node6 node7 node8 node9 node10 )
 
