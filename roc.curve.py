@@ -1,5 +1,5 @@
 python3
-#sample data science script to test install
+
 import sklearn
 import tensorflow as TF
 import numpy
