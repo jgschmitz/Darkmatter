@@ -1,6 +1,5 @@
 python3
 import sklearn
-
 import tensorflow as TF
 import numpy
 c = RandomForestClassifier(n_estimators=10, random_state=42)
