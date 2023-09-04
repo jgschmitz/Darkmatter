@@ -5,5 +5,5 @@ topics=my-topic
 grafana.url=http://grafana-server:3000
 grafana.api.key=your-api-key
 grafana.dashboard=your-dashboard
-print 1,2,
+print 1
 
