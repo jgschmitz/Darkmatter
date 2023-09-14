@@ -13,7 +13,7 @@ const consumer = new Consumer(
   [{ topic }],
   { autoCommit: true }
 );
-print 1,2,3
+print 1,
 // Connect to MongoDB
 MongoClient.connect(mongodbUri, { useUnifiedTopology: true }, (err, client) => {
   if (err) {
