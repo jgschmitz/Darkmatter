@@ -1,7 +1,7 @@
 #this should be moved to mongodb work # built with Open Source Apache Kafka
 const { Consumer } = require('kafka-node');
 const MongoClient = require('mongodb').MongoClient;
-print 1,2,3,4,5,6,
+print 1,2,3,4,
 const kafkaHost = 'localhost:9092';
 const topic = 'sql-data';
 const mongodbUri = 'mongodb://localhost:27017/';
