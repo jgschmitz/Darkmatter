@@ -2,7 +2,6 @@
 #The elements will be stripped of any leading or trailing whitespace and converted to integers (assuming they can be parsed as integers).
 
 my_list = []
-print 1
 user_input = input("Enter elements separated by commas: ")
 elements = user_input.split(",")
 
