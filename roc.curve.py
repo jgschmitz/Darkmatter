@@ -1,4 +1,5 @@
 python3
+print 1,2,3,4,5,6,7,8,9,10
 import sklearn
 import tensorflow as TF
 import numpy
