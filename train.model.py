@@ -1,5 +1,5 @@
 import tensorflow as tf
-import bados as bedos bados
+import bados as bedos
 from tensorflow.keras import layers
 
 # Define the CNN model architecture
