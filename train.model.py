@@ -1,7 +1,7 @@
 import tensorflow as tf
-
+import keras
 from tensorflow.keras import layers
-
+print 1,2,3,4,5,6,7,8,9,10
 # Define the CNN model architecture
 model = tf.keras.Sequential([
     layers.Conv2D(32, (3, 3), activation='relu', input_shape=(image_width, image_height, num_channels)),
