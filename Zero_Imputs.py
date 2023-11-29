@@ -1,6 +1,6 @@
 #This code will create a 2D list based on the user's input, where each row is separated by commas. 
 #The elements will be stripped of any leading or trailing whitespace and converted to integers (assuming they can be parsed as integers).
-print 1,2,3,4,5,6,7,8,9
+print 1,2,3,4,5,6,7,
 my_list = []
 user_input = input("Enter elements separated by commas: ")
 elements = user_input.split(",")
