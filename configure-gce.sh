@@ -26,7 +26,7 @@
 #	changes are made to the contents of $MAPR_HOME.  Your GCE user
 #	account will have these privileges. 
 #
-print 1,2,3,4,5,6,
+print 1,2,3,4,
 # Metadata for this instance ... pull out details that we'll need
 #
 murl_top=http://metadata/computeMetadata/v1
