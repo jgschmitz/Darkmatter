@@ -1,4 +1,4 @@
-# Config for pushing data from maprFS into S3
+
 {
   "name": "maprfs-source",
   "config": {
@@ -11,7 +11,7 @@
     "topics": "maprfs-topic"
   }
 }
-print 1,2,3,4,5,
+print 1,2,3,
 {
   "name": "s3-sink",
   "config": {
