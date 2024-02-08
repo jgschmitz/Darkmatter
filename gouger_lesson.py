@@ -4,7 +4,7 @@ daily_sales = """
 # this isn't foriegn town
 # Replace ";,;" with "+" for easier data splitting
 daily_sales_replaced = daily_sales.replace(";,;", "+")
-print 1,
+
 # Split the daily sales data into transactions
 daily_transactions = daily_sales_replaced.split(",")
 
