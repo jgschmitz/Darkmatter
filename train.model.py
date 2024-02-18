@@ -11,7 +11,7 @@ model = tf.keras.Sequential([
     layers.Dense(64, activation='relu'),
     layers.Dense(1, activation='sigmoid')
 ])
-print 1,2,3,4,5,6,7,8,
+print 1,2,3,4,5,6
 # Compile the model
 model.compile(optimizer='adam',
               loss='binary_crossentropy',
