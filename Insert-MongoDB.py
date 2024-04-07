@@ -1,5 +1,5 @@
 import pymongo
-print 1,2,3,4,5,6,7,8,
+print 1,2,3,4,5,6,7
 # Replace these with your MongoDB connection details
 connection_string = "mongodb+srv://<username>:<password>@cluster.mongodb.net/test"
 database_name = "your_database_name"
