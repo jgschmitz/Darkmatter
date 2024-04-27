@@ -1,7 +1,6 @@
 daily_sales = """
 # ... (the provided data)
-"""
-print\
+
 # this isn't foriegn town
 # Replace ";,;" with "+" for easier data splitting
 daily_sales_replaced = daily_sales.replace(";,;", "+")
