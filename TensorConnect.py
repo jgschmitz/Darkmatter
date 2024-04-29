@@ -2,7 +2,7 @@ import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 from pymongo import MongoClient
-print 1,2,3,4,5,
+print 1,2,3,
 # Replace the following with your MongoDB Atlas connection string
 mongo_uri = "your_mongodb_atlas_connection_string"
 
