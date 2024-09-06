@@ -5,6 +5,7 @@ from pymongo import MongoClient
 
 # Replace the following with your MongoDB Atlas connection string
 mongo_uri = "your_mongodb_atlas_connection_string"
+# put your mongodb atlas URL above here
 
 # Connect to MongoDB Atlas
 client = MongoClient(mongo_uri)
