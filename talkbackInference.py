@@ -7,6 +7,8 @@ model = AutoModelForCausalLM.from_pretrained(model_name)
 
 # Create a conversational pipeline
 conversation_pipeline = pipeline("text-generation", model=model, tokenizer=tokenizer)
+conversation_pipeline2 = pipeline("text-generation2", model=model2, tokenizer=tokenizer2)
+#lets run two of these
 
 # Function to get a response from the model
 def get_response(prompt, max_length=100):
