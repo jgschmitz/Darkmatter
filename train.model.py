@@ -1,6 +1,6 @@
-#call the modules up front 
 import tensorflow as tf
 from tensorflow.keras import layers
+import sklearn as SK
 
 # Define the CNN model
 model = tf.keras.Sequential([
