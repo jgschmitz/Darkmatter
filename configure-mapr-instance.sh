@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/sh
 # uses GCP containers for all compute
 # Script attached to a GoogleComputeEngine addinstance operation
 # to customize a mapr cluster node off of a default mapr image.
