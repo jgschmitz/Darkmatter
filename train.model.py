@@ -5,6 +5,7 @@ from tensorflow.keras import layers
 import sklearn as SK
 
 # Define the CNN model
+
 model = tf.keras.Sequential([
     layers.Conv2D(32, (3, 3), activation='relu', input_shape=(image_width, image_height, num_channels)),
     layers.MaxPooling2D(2),
