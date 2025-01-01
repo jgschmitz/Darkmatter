@@ -1,4 +1,4 @@
-DIRECTORY Contentamentes
+DIRECTORY Content
 ------------------
 	launch-mapr-cluster.sh : 
 		High-level script that uses the specifications from a 
