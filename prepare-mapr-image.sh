@@ -1,6 +1,6 @@
 #! /bin/bash
 #
-#	leveraged from mapr_imager.sh
+#leveraged from mapr_imager.sh
 #
 # Script to be executed on top of a newly created Linux instance 
 # to install MapR components for an instance image to be used later.
