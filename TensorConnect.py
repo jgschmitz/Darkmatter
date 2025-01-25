@@ -47,3 +47,4 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 model.fit(data, labels, epochs=10, batch_size=32)
 
 # Perform predictions or other machine learning operations as needed
+# There is more code in this repo for next steps
