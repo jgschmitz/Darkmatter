@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#this mapr cluster is still running lol!!
 #  Script to launch a MapR cluster in the
 #   Cluster configuration defined in simple file
 #       ${NODE_NAME_ROOT}<index>:<packages>
