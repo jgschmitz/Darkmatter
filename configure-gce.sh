@@ -7,7 +7,7 @@
 # The CONFIGBUCKET specification need not reference an existing 
 # bucket; it is simply the default location for un-affiliated files
 # accessed via the "gs://" syntax.
-#
+
 # The GCS_JARURI and BDCONFIG_URI specifications may change.  
 # Check the latest documentation at the Google Developer site
 # in the event that a newer release of either product is available.
@@ -15,12 +15,12 @@
 # Google distributes these packages as part of a larger 
 # "bdutil" bundle (an evolution of the original "Apache Hadoop on GCE" 
 # bundle)  See https://developers.google.com/hadoop/ for details.
-#
+
 # Since the MapR cluster on GCE is set up with a different set of scripts
 # (launch-mapr-cluster.sh), there's no need for bdutil infrastructure.
 # Simply deploy your cluster and then run this script on each
 # cluster node or client node that will access the cloud storage.
-#
+
 # NOTE: 
 #	The script must be run by a user with "sudo" privileges, since
 #	changes are made to the contents of $MAPR_HOME.  Your GCE user
