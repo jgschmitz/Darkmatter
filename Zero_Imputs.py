@@ -1,3 +1,4 @@
+# zero imputs
 def create_2d_list():
     my_list = []
     user_input = input("Enter rows of elements separated by commas (use semicolons to separate rows): ")
