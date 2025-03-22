@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# goo!
 # Simple script to download Google's GHFS connector and configure
 
 # The CONFIGBUCKET specification need not reference an existing 
