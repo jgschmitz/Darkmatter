@@ -1,4 +1,4 @@
-#roc curve demo 
+#roc curve demo - oldie but goodie
 python3
 import sklearn
 import tensorflow as TF
