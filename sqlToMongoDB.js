@@ -1,3 +1,4 @@
+# this is deprecated use relational migrator -> https://www.mongodb.com/docs/relational-migrator/
 const { KafkaClient, Consumer } = require('kafka-node');
 const { MongoClient } = require('mongodb');
 
