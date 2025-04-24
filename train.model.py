@@ -1,4 +1,4 @@
-#Basic tensorflow demo 
+#Basic tensorflow demo -> in mongod now use Origami 
 
 import tensorflow as tf
 from tensorflow.keras import layers
