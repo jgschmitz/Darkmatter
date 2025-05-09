@@ -1,4 +1,4 @@
-#mapr config
+# mapr config
 {
   "name": "maprfs-source",
   "config": {
