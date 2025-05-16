@@ -1,21 +1,21 @@
 #! /bin/bash
-#
+
 #leveraged from mapr_imager.sh
-#
+
 # Script to be executed on top of a newly created Linux instance 
 # to install MapR components for an instance image to be used later.
 # The specific packages can be passed in via meta data (see maprpackages
 # below)
-#
+
 # The resulting image will be used as a basis for configure-mapr-instance.sh
 # See that script for the steps that need to be done BEFORE this node
 # can successfully run MapR services.
-#
+
 # Expectations:
 #	- Script run as root user (hence no need for permission checks)
 #	- Basic distro differences (APT-GET vs YUM, etc) can be handled
 #	    There are so few differences, it seemed better to manage one script.
-#
+
 #Tested with MapR 4
 #
 # JAVA
