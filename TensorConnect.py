@@ -19,7 +19,7 @@ query = {"organizationId": "your_organization_id", "workspaceId": "your_workspac
 cursor = collection.find(query)
 
 # Extract data for training
-data = []
+data = [] # point to your data here 
 labels = []
 
 for document in cursor:
