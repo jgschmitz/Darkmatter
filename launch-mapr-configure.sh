@@ -1,12 +1,5 @@
 #!/bin/bash
-# this mapr cluster is still running lol!!
-#  Script to launch a MapR cluster in the
-#   Cluster configuration defined in simple file
-#       ${NODE_NAME_ROOT}<index>:<packages>
-#   for all the nodes you desire.  The 'mapr-' prefix is not necessary
-#   for the packages. Any line that does NOT start with ${NODE_NAME_ROOT}
-#   is treated as a comment. 
-#
+
 #   A sample config file
 #       node0:zookeeper,cldb,fileserver,tasktracker,nfs,webserver
 #       node1:zookeeper,cldb,fileserver,tasktracker,nfs
