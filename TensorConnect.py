@@ -1,6 +1,5 @@
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
 from pymongo import MongoClient
 
 # Replace the following with your MongoDB Atlas connection string
