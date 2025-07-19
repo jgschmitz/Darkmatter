@@ -1,45 +1,43 @@
-import random
 import pandas as pd
-from faker import Faker
+import numpy as np
 from datetime import datetime, timedelta
+from faker import Faker
+import secrets
 
-# Initialize Faker for generating synthetic data
+# Initialize Faker and constants
 fake = Faker()
+SIGNAL_TYPES = ["Noise", "Pulsar", "Unknown Signal", "ET Candidate"]
+SIGNAL_WEIGHTS = [0.80, 0.15, 0.04, 0.01]  # Probabilities must sum to 1
 
-# Function to generate mock SETI signal data
 def generate_seti_data(num_records=1000):
-    """Generate mock time series data for SETI@Home-style radio signal analysis."""
+    """
+    Generate mock SETI-style radio signal time series data.
     
-    # Time Series: Start time for data simulation
-    start_time = datetime.utcnow() - timedelta(days=30)  # 30 days of historical data
-    
-    # Possible signal classifications
-    signal_types = ["Noise", "Pulsar", "Unknown Signal", "ET Candidate"]
+    Returns:
+        pd.DataFrame: DataFrame with synthetic observations.
+    """
+    now = datetime.utcnow()
+    base_time = now - timedelta(days=30)
 
-    data = []
-    
-    for _ in range(num_records):
-        timestamp = start_time + timedelta(seconds=random.randint(1, 86400))  # Random time in a 24-hour period
-        frequency = random.uniform(1.0, 10.0) * 10**9  # GHz (simulated radio frequency)
-        snr = random.uniform(-10, 50)  # Signal-to-noise ratio in dB
-        ra = random.uniform(0, 360)  # Right Ascension (degrees)
-        dec = random.uniform(-90, 90)  # Declination (degrees)
-        classification = random.choices(signal_types, weights=[80, 15, 4, 1])[0]  # More noise, rare "ET Candidate"
+    # Pre-allocate arrays for performance
+    timestamps = [(base_time + timedelta(seconds=int(np.random.uniform(0, 86400)))).isoformat() for _ in range(num_records)]
+    frequencies = np.round(np.random.uniform(1.0, 10.0, num_records) * 1e9, 2)
+    snrs = np.round(np.random.uniform(-10, 50, num_records), 2)
+    ras = np.round(np.random.uniform(0, 360, num_records), 4)
+    decs = np.round(np.random.uniform(-90, 90, num_records), 4)
+    classifications = np.random.choice(SIGNAL_TYPES, size=num_records, p=SIGNAL_WEIGHTS)
 
-        data.append({
-            "timestamp": timestamp.strftime("%Y-%m-%d %H:%M:%S"),
-            "frequency_hz": round(frequency, 2),
-            "snr_db": round(snr, 2),
-            "ra_deg": round(ra, 4),
-            "dec_deg": round(dec, 4),
-            "classification": classification
-        })
+    return pd.DataFrame({
+        "timestamp": timestamps,
+        "frequency_hz": frequencies,
+        "snr_db": snrs,
+        "ra_deg": ras,
+        "dec_deg": decs,
+        "classification": classifications
+    })
 
-    return pd.DataFrame(data)
+# Generate and display the data
+seti_mock_data = generate_seti_data(5000)
 
-# Generate mock data
-seti_mock_data = generate_seti_data(num_records=5000)
-
-# Display the first few rows
 import ace_tools as tools
 tools.display_dataframe_to_user(name="Mock SETI Data", dataframe=seti_mock_data)
