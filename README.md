@@ -1,7 +1,7 @@
 # Darkmatter 🚀👽✨
 
 Ever wondered what happens when you mix **MongoDB**, **SETI’s cosmic data**, and the power of the **cloud**?  
-Welcome to **Darkmatter** — a side project born from curiosity, caffeine, and a conference deadline.
+Welcome to **Darkmatter** — a side project born from curiosity, caffeine, lots of pizza. 🍕
 
 ---
 
