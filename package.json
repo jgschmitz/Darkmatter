@@ -1,0 +1,48 @@
+{
+  "name": "darkmatter-seti",
+  "version": "2.0.0",
+  "description": "Fun implementation using MapR and public data from the SETI project - a cosmic data processing pipeline with MongoDB, Apache Drill, and real-time visualization",
+  "main": "backendExpress.jsx",
+  "type": "module",
+  "scripts": {
+    "start": "node backendExpress.jsx",
+    "dev": "nodemon backendExpress.jsx",
+    "build": "echo 'Build process for production deployment'",
+    "test": "echo 'Test suite to be implemented'",
+    "lint": "eslint . --ext .js,.jsx",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "seti",
+    "mongodb",
+    "apache-drill",
+    "grafana",
+    "machine-learning",
+    "tensorflow",
+    "cosmic-data",
+    "astronomy",
+    "data-visualization"
+  ],
+  "author": "jgschmitz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "eslint": "^8.48.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
