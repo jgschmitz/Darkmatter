@@ -23,7 +23,7 @@ Features include:
 ## ⚙️ Tech Stack
 
 ### Backend & Data Processing
-- **Python 3.8+** with pandas, numpy, scikit-learn, TensorFlow
+- **Python 3.10+** with pandas, numpy, scikit-learn, TensorFlow
 - **MongoDB** – flexible, document-based storage for cosmic data
 - **Apache Drill** – sub-second SQL queries across MongoDB collections
 - **PyMongo** – Python MongoDB driver with async support
