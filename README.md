@@ -3,7 +3,7 @@
 Ever wondered what happens when you mix **MongoDB**, **SETI's cosmic data**, and the power of the **cloud**?  
 Welcome to **Darkmatter** — a side project born from curiosity, caffeine, lots of pizza. 🍕
 
-**Version 2.0** - Now with enhanced machine learning pipeline, proper project structure, and improved data visualization!
+**Version 3.0** - Now with enhanced machine learning pipeline, proper project structure, and improved data visualization!
 
 ---
 
