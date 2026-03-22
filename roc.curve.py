@@ -1,5 +1,6 @@
 """
-ROC Curve Analysis for SETI Signal Classification ** this has been recently updated please test 
+ROC Curve Analysis for SETI Signal Classification ** 
+this has been recently updated please test 
 Provides tools for evaluating machine learning models on SETI data using ROC curves.
 """
 import numpy as np
