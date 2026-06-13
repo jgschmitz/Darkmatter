@@ -1,7 +1,3 @@
-"""
-ROC Curve Analysis for SETI Signal Classification ** 
-Provides tools for evaluating machine learning models on SETI data using ROC curves.
-"""
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestClassifier
