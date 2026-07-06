@@ -1,5 +1,3 @@
-"""Process and combine SETI CSV datasets for analysis."""
-
 import logging
 from pathlib import Path
 
