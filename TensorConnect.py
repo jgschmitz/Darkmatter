@@ -1,49 +1,48 @@
-import tensorflow as tf
-from tensorflow.keras.models import Sequential
+import numpy as np
+import keras
+from keras import layers
 from pymongo import MongoClient
 
-# Replace following with your MongoDB Atlas connection string
-mongo_uri = "your_mongodb_atlas_connection_string"
-# put your mongodb atlas URL above here
-
-# Connect to MongoDB Atlas
-client = MongoClient(mongo_uri)
-
-# Specify the database and collection
+# 1. Setup MongoDB Connection
+MONGO_URI = "your_mongodb_atlas_connection_string"
+client = MongoClient(MONGO_URI)
 db = client["your_database_name"]
 collection = db["your_collection_name"]
 
-# Query MongoDB for your data (replace with your own query conditions)
+# 2. Extract data from MongoDB cleanly using projection
+# Pulling only the fields we need reduces network overhead significantly
 query = {"organizationId": "your_organization_id", "workspaceId": "your_workspace_id"}
-cursor = collection.find(query)
+projection = {"features": 1, "label": 1, "_id": 0}
+cursor = collection.find(query, projection)
 
-# Extract data for training
-data = [] # point to your data here 
-labels = []
+# Convert cursor efficiently (List comprehensions are faster than manual for-loops)
+documents = list(cursor)
+if not documents:
+    raise ValueError("No data found matching the query criteria.")
 
-for document in cursor:
-    # Assuming you have features and labels in your MongoDB documents
-    features = document["features"]
-    label = document["label"]
+X = np.array([doc["features"] for doc in documents])
+y = np.array([doc["label"] for doc in documents])
 
-    data.append(features)
-    labels.append(label)
+# 3. Modern Keras Model Definition
+# Keras 3 standardizes on using an explicit Input layer over input_dim/input_shape props
+model = keras.Sequential([
+    layers.Input(shape=(X.shape[1],)),
+    layers.Dense(units=64, activation='relu'),
+    layers.Dense(units=1, activation='sigmoid')
+])
 
-# Convert Python lists to NumPy arrays (assuming they are compatible)
-import numpy as np
-data = np.array(data)
-labels = np.array(labels)
+# 4. Compile the model 
+model.compile(
+    loss='binary_crossentropy', 
+    optimizer='adam', 
+    metrics=['accuracy']
+)
 
-# Define your TensorFlow model
-model = Sequential()
-model.add(Dense(units=64, activation='relu', input_dim=data.shape[1]))
-model.add(Dense(units=1, activation='sigmoid'))
-
-# Compile the model (adjust the loss, optimizer, and metrics based on your task)
-model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
-
-# Train the model
-model.fit(data, labels, epochs=10, batch_size=32)
-
-# Perform predictions or other machine learning operations as needed
-# There is more code in this repo for next steps
+# 5. Train the model
+model.fit(
+    X, 
+    y, 
+    epochs=10, 
+    batch_size=32,
+    validation_split=0.2 # Added a standard validation split to track overfitting
+)
