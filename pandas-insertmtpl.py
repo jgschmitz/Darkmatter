@@ -1,68 +1,75 @@
 import logging
+from glob import glob
 from pathlib import Path
 
 import pandas as pd
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
 
 def process_seti_csv_files(
     file_pattern: str = "data/seti_*.csv",
-    output_file: str | None = None,
+    output_file: str | Path | None = None,
+    *,
+    strict: bool = False,
 ) -> pd.DataFrame:
-    files = list(Path().glob(file_pattern))
+    """Combine matching CSV files, adding a source_file column.
+
+    With strict=False, unreadable or malformed files are logged and skipped.
+    With strict=True, those errors are raised instead.
+    """
+    output_path = Path(output_file).resolve() if output_file is not None else None
+
+    files = sorted(
+        path
+        for name in glob(file_pattern, recursive=True)
+        if (path := Path(name)).is_file()
+        and path.resolve() != output_path
+    )
+
     if not files:
-        logger.warning("No files found matching pattern: %s", file_pattern)
+        logger.warning("No input files found matching: %s", file_pattern)
         return pd.DataFrame()
 
-    logger.info("Found %d files to process", len(files))
-    dataframes = []
-    for file in files:
+    logger.info("Found %d input files", len(files))
+    dataframes: list[pd.DataFrame] = []
+    skipped = 0
+
+    for path in files:
         try:
-            df = pd.read_csv(file)
-            df["source_file"] = file.name
-            dataframes.append(df)
-            logger.info("Processed: %s (%d rows)", file, len(df))
-        except Exception as e:
-            logger.error("Error processing %s: %s", file, e)
+            df = pd.read_csv(path)
+        except (OSError, UnicodeError, pd.errors.ParserError, pd.errors.EmptyDataError):
+            if strict:
+                raise
+            logger.exception("Skipping unreadable CSV: %s", path)
+            skipped += 1
+            continue
+
+        # Fail explicitly rather than silently destroying an input column.
+        if "source_file" in df.columns:
+            raise ValueError(
+                f"{path} already contains the reserved column 'source_file'"
+            )
+
+        df["source_file"] = path.name
+        dataframes.append(df)
+        logger.info("Read %s: %d rows", path, len(df))
 
     if not dataframes:
         logger.error("No valid files could be processed")
         return pd.DataFrame()
 
-    result = pd.concat(dataframes, ignore_index=True)
-    logger.info("Combined dataset shape: %s", result.shape)
-    if output_file:
-        result.to_csv(output_file, index=False)
-        logger.info("Combined data saved to: %s", output_file)
-    return result
-
-
-def analyze_seti_data(df: pd.DataFrame) -> dict:
-    if df.empty:
-        return {"error": "DataFrame is empty"}
-
-    analysis = {
-        "total_records": len(df),
-        "columns": list(df.columns),
-        "data_types": {col: str(dtype) for col, dtype in df.dtypes.items()},
-        "memory_usage_mb": df.memory_usage(deep=True).sum() / 1024**2,
-        "missing_values": df.isnull().sum().to_dict(),
-    }
-    numeric_cols = df.select_dtypes(include="number").columns
-    if len(numeric_cols) > 0:
-        analysis["numeric_summary"] = df[numeric_cols].describe().to_dict()
-    return analysis
-
-
-if __name__ == "__main__":
-    combined_data = process_seti_csv_files(
-        file_pattern="path/to/your/seti/files/seti_*.csv",
-        output_file="combined_seti_data.csv",
+    result = pd.concat(dataframes, ignore_index=True, sort=False)
+    logger.info(
+        "Combined %d files; skipped %d; shape=%s",
+        len(dataframes),
+        skipped,
+        result.shape,
     )
-    if not combined_data.empty:
-        analysis_results = analyze_seti_data(combined_data)
-        print("SETI Data Analysis Results:")
-        for key, value in analysis_results.items():
-            print(f"{key}: {value}")
+
+    if output_path is not None:
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        result.to_csv(output_path, index=False)
+        logger.info("Saved combined data to %s", output_path)
+
+    return result
