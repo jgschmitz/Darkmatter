@@ -1,7 +1,7 @@
 import pymongo
 # 2.0 clean
 # MongoDB connection details
-CONNECTION_STRING = "mongodb+srv://<username>:<password>@cluster.mongodb.net/test"
+CONNECTION_STRING = ""
 DATABASE_NAME = "your_database_name"
 COLLECTION_NAME = "your_collection_name"
 
